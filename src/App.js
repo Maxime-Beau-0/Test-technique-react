@@ -1,3 +1,4 @@
+import { Card } from "./components/card"
 import { Post } from "./components/post"
 
 export default function App() {
@@ -11,10 +12,10 @@ export default function App() {
           <Post title="Title 2" content="testContent" time={new Date()} />
         </li>
         <li class="flex flex-row">
-          <Post
-            title="Title 3"
-            content="testContent bla bla bla bla bla"
-            time={new Date()}
+          <Card
+            name="Maxime Beau"
+            city="Montpellier"
+            email="maxime.beau@live.fr"
           />
         </li>
       </ul>
