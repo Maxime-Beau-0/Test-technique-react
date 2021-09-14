@@ -54,7 +54,9 @@ export const Post = (props) => {
           onClick={() => setDisplayComments(!displayComments)}
           className="select-none cursor-pointer hover:text-gray-600 text-gray-300 dark: text-gray-100 text-sm"
         >
-          Display {comments.length} comments
+          {`${displayComments ? "Hide" : "Display"} ${
+            comments.length
+          } comments`}
         </div>
 
         {displayComments && (
