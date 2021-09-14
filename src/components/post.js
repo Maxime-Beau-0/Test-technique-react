@@ -37,13 +37,11 @@ export const Post = (props) => {
           <StyledUserMail className="text-gray-600 dark:text-gray-200 text-xs">
             {`Posted by ${user.email}`}
             <div className="display-on-hover absolute">
-              {user && (
-                <UserCard
-                  name={user.username}
-                  city={user.address.city}
-                  email={user.email}
-                />
-              )}
+              <UserCard
+                name={user.username}
+                city={user.address.city}
+                email={user.email}
+              />
             </div>
           </StyledUserMail>
         )}
