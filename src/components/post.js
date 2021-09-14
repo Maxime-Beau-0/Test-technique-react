@@ -52,7 +52,7 @@ export const Post = (props) => {
         </div>
         <div
           onClick={() => setDisplayComments(!displayComments)}
-          className="select-none cursor-pointer text-gray-300 dark: text-gray-100 text-sm"
+          className="select-none cursor-pointer hover:text-gray-600 text-gray-300 dark: text-gray-100 text-sm"
         >
           Display {comments.length} comments
         </div>
